@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: dmpreis/app
+  tag: 0.0.2
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 5000
+  nodePort: 30000
